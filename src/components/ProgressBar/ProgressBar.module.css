@@ -1,0 +1,25 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.label {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.track {
+  height: 6px;
+  border-radius: 50px;
+  background: #f7f7f7;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 50px;
+  background: #00c1ff;
+  transition: width 0.3s;
+}
