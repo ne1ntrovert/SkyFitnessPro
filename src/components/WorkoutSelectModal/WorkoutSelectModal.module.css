@@ -1,0 +1,91 @@
+.title {
+  margin-bottom: 34px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.list {
+  max-height: 360px;
+  margin-bottom: 34px;
+  padding: 0 12px 0 0;
+  list-style: none;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #000 #f7f7f7;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+}
+
+.mark {
+  display: flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: 1.5px solid #000;
+  border-radius: 50%;
+}
+
+.mark:has(svg) {
+  border: 0;
+}
+
+.radio:checked + .mark {
+  box-shadow: 0 0 0 3px #000;
+}
+
+.radio:focus-visible + .mark {
+  outline: 2px solid #00c1ff;
+  outline-offset: 4px;
+}
+
+.name {
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.details {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.note,
+.error {
+  margin-bottom: 34px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.error {
+  color: var(--error);
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+}

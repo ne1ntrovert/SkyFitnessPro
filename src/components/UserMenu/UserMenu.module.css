@@ -1,0 +1,66 @@
+.root {
+  position: relative;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.popup {
+  position: absolute;
+  top: calc(100% + 16px);
+  right: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 266px;
+  padding: 30px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0 4px 67px -12px rgba(0, 0, 0, 0.13);
+  text-align: center;
+}
+
+.popupName {
+  font-size: 18px;
+}
+
+.email {
+  margin-bottom: 24px;
+  font-size: 18px;
+  color: #999;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .name {
+    display: none;
+  }
+
+  .toggle {
+    gap: 6px;
+  }
+}

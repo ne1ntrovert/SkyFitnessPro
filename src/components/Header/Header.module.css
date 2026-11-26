@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 52px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.tagline {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #000;
+  opacity: 0.5;
+}
+
+.login {
+  min-width: 103px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 34px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .login {
+    min-height: 36px;
+    padding: 8px 16px;
+  }
+}
